@@ -20,6 +20,7 @@ inputForm.onsubmit = function(event) {
     sayTheWord(inputTxt.value);
 }
 play.addEventListener('click', () => {sayTheWord(inputTxt.value);});
+play2.addEventListener('click', () => {sayTheWord(textArray);}); //speel array af
 pause.addEventListener('click', () => {synth.pause();});
 resume.addEventListener('click', () => {synth.resume();});
 
@@ -60,3 +61,22 @@ pitch.onchange = function() {
 rate.onchange = function() {
     rateValue.textContent = rate.value;
     }
+const textArray = //zet je array hier
+    [
+        'ju wot mejt',
+        ' waj ju listening to dis,',
+        ' ar ju gonna do somting wit jur lifee?',
+        ' ..........',
+        'So I see You stayed, just to tell you that I am waiting with you....................',
+        'Yes I have time, do you???',
+        'I can wait',
+        '........................',
+        'As said I can wait, I have time',
+        '......................................................',
+        'oke you win',
+        '...........................................',
+        'or do you?',
+        '*insert mysterious music here*',
+        'I wont give up easly!',
+        'dot dot dot dot dot dot dot dot dot dot dotdot dot dot dot dot dot dot dot dot dot dotdot dot dot dot dot dot dot dot dot dot dotdot dot dot dot dot dot dot dot dot dot dot'
+    ];
